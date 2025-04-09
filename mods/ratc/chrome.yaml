@@ -1,0 +1,34 @@
+^Glyphs:
+	Image: uibits/glyphs.png
+	Image2x: uibits/glyphs-2x.png
+	Image3x: uibits/glyphs-3x.png
+
+
+flags:
+	Inherits: ^Glyphs
+	Regions:
+		japan: 226, 129, 30, 15
+		italy: 226, 113, 30, 15
+
+sidebar-japan:
+	Inherits: ^Sidebar
+	Regions:
+		radar: 290, 290, 222, 222
+		background-top: 0, 185, 238, 262
+		background-moneybin: 0, 54, 238, 28
+		background-iconbg: 12, 275, 190, 47
+		background-iconrow: 0, 116, 238, 47
+		background-bottom: 0, 166, 238, 8
+		background-supportoverlay: 77, 324, 64, 48
+
+sidebar-italy:
+	Inherits: ^Sidebar
+	Regions:
+		radar: 290, 290, 222, 222
+		background-top: 0, 185, 238, 262
+		background-moneybin: 0, 54, 238, 28
+		background-iconbg: 12, 275, 190, 47
+		background-iconrow: 0, 116, 238, 47
+		background-bottom: 0, 166, 238, 8
+		background-supportoverlay: 77, 324, 64, 48
+
