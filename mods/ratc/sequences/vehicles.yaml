@@ -1,0 +1,5 @@
+jflametank:
+	Inherits: 3tnk
+
+jarchertank:
+	Inherits: 4tnk

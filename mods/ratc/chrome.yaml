@@ -3,6 +3,8 @@
 	Image2x: uibits/glyphs-2x.png
 	Image3x: uibits/glyphs-3x.png
 
+^Sidebar:
+	Image: uibits/sidebar.png
 
 flags:
 	Inherits: ^Glyphs

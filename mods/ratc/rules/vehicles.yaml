@@ -1,0 +1,81 @@
+^BaseHeavyTank:
+	Inherits: 3TNK
+
+jflametank:
+	Inherits: ^BaseHeavyTank
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Japanese Flame Tank
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 40
+		Prerequisites: ~vehicles.soviet
+		Description: This is a Japanese Flame Tank
+	Armament:
+		Weapon: flameshower
+		LocalOffset: 256,0,512
+
+
+^BaseMammothTank:
+	Inherits: 4TNK
+
+jarchertank:
+	Inherits: ^BaseMammothTank
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 320
+		Prerequisites: fix, stek, ~vehicles.soviet, ~techlevel.high
+		Description: Atomic Tank created by famous scientist Dr. Archer Evans
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: atomic archer tank
+		GenericName: Tank
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Health:
+		HP: 90000
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 47
+		Locomotor: heavytracked
+	RevealsShroud:
+		MinRange: 4c0
+		Range: 6c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+	Turreted:
+		TurnSpeed: 8
+	Armament@PRIMARY:
+		Weapon: Atomic120mm
+		LocalOffset: 900,180,340, 900,-180,340
+		Recoil: 171
+		RecoilRecovery: 30
+		MuzzleSequence: muzzle
+	Armament@SECONDARY:
+		Name: secondary
+		Weapon: MammothTusk
+		LocalOffset: -85,384,340, -85,-384,340
+		LocalYaw: -100,100
+		Recoil: 43
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	SpawnActorOnDeath:
+		Actor: 4TNK.Husk
+	ChangesHealth:
+		Step: 100
+		Delay: 3
+		StartIfBelow: 50
+		DamageCooldown: 150
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded
+	Selectable:
+		DecorationBounds: 1877, 1621, 0, -170
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: vehicles.upgraded

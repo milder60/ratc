@@ -1,0 +1,44 @@
+flamethrower:
+	Inherits: ^FireWeapon
+	Range: 4c0
+	Burst: 6
+	BurstDelays: 2
+
+flameshower:
+	Inherits: ^FireWeapon
+	ReloadDelay: 50
+	Burst: 15
+	BurstDelays: 1
+	Projectile: Bullet
+		Speed: 300
+		TrailImage: fb4
+		Image: fb3
+		LaunchAngle: 62
+		Inaccuracy: 853
+	Warhead@1Dam: SpreadDamage
+		Spread: 401
+		Damage: 1200
+		Versus:
+			None: 70
+			Wood: 80
+			Tree: 80
+			Light: 40
+			Heavy: 25
+			Concrete: 10
+	Warhead@3Eff: CreateEffect
+		Explosions: small_napalm
+
+
+
+
+
+Atomic120mm:
+	Inherits: ^Cannon
+	ReloadDelay: 90
+	Burst: 3
+	InvalidTargets: Air, Infantry
+	Warhead@1Dam: SpreadDamage
+		Damage: 6000
+		Versus:
+			Heavy: 115
+		InvalidTargets: Air

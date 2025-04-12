@@ -1,34 +1,30 @@
-Faction@japan:
-	Name: Japan
-	InternalName: japan
-	Side: Soviet
-	Description: Japan: Stealth\nSpecial Ability: Stealth\nSpecial Unit: Stealth Tank
-	Color: 0, 255, 255
-	Palette: ra|player.palette
-	SidebarPalette: ra|player-sidebar.pal
-	SidebarChrome: sidebar-japan
-	BuildPaletteOrder: 9
+#Holy Shit this worked
 
-StartingUnits@mcvonly:
-	Class: none
-	ClassName: options-starting-units.mcv-only
-	Factions: allies, england, france, germany, soviet, russia, ukraine, japan
-	BaseActor: mcv
+^MyWord:
+	Inherits: World
+	Faction@japan:
+		Name: Japannnn
 
-StartingUnits@lightsoviet:
-	Class: light
-	ClassName: options-starting-units.light-support
-	Factions: soviet, russia, ukraine, japan
-	BaseActor: mcv
-	SupportActors: e1,e1,e1,e3,e3,apc,ftrk
-	InnerSupportRadius: 3
-	OuterSupportRadius: 5
+	StartingUnits@mcvonly:
+		Class: none
+		ClassName: options-starting-units.mcv-only
+		Factions: allies, england, france, germany, soviet, russia, ukraine, japan
+		BaseActor: mcv
 
-StartingUnits@heavysoviet:
-	Class: heavy
-	ClassName: options-starting-units.heavy-support
-	Factions: soviet, russia, ukraine, japan
-	BaseActor: mcv
-	SupportActors: e1,e1,e1,e3,e3,apc,ftrk,3tnk,3tnk
-	InnerSupportRadius: 3
-	OuterSupportRadius: 5
+	StartingUnits@lightsoviet:
+		Class: light
+		ClassName: options-starting-units.light-support
+		Factions: soviet, russia, ukraine, japan
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e3,e3,apc,ftrk
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+
+	StartingUnits@heavysoviet:
+		Class: heavy
+		ClassName: options-starting-units.heavy-support
+		Factions: soviet, russia, ukraine, japan
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e3,e3,apc,ftrk,3tnk,3tnk
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
