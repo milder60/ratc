@@ -15,7 +15,7 @@ flags:
 sidebar-japan:
 	Inherits: ^Sidebar
 	Regions:
-		radar: 290, 290, 222, 222
+		radar: 514, 290, 222, 222
 		background-top: 0, 185, 238, 262
 		background-moneybin: 0, 54, 238, 28
 		background-iconbg: 12, 275, 190, 47
@@ -26,7 +26,7 @@ sidebar-japan:
 sidebar-italy:
 	Inherits: ^Sidebar
 	Regions:
-		radar: 290, 290, 222, 222
+		radar: 514, 68, 222, 222
 		background-top: 0, 185, 238, 262
 		background-moneybin: 0, 54, 238, 28
 		background-iconbg: 12, 275, 190, 47

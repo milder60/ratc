@@ -65,6 +65,7 @@ Rules:
     ratc|rules/structures.yaml
     ratc|rules/player.yaml
     ratc|rules/vehicles.yaml
+    ratc|rules/aircraft.yaml
 
 
 
@@ -77,6 +78,7 @@ Sequences:
     ra|sequences/misc.yaml
     ra|sequences/decorations.yaml
     ratc|sequences/vehicles.yaml
+    ratc|sequences/aircraft.yaml
 
 TileSets:
     ra|tilesets/snow.yaml

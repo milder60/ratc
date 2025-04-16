@@ -1,0 +1,6 @@
+japheli:
+	Inherits: heli
+
+japyak:
+	Inherits: yak
+

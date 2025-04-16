@@ -30,7 +30,7 @@ jarchertank:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: atomic archer tank
+		Name: Atomic Archer Tank
 		GenericName: Tank
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
