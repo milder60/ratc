@@ -9,11 +9,11 @@ japyak:
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 31
 		Prerequisites: ~afld, ~techlevel.medium
-		Description: JappaYakka
+		Description: powaerful japenese plane armed with missles and bullets created by the famouc DR. archer
 	Valued:
-		Cost: 10
+		Cost: 1400
 	Tooltip:
-		Name: JappaYakka
+		Name: attack plane
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -68,7 +68,7 @@ japyak:
 		Type: CenterPosition
 		RequiresCondition: enable-smoke
 	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded
+		Prerequisites: #aircraft.upgraded
 	Selectable:
 		DecorationBounds: 1280, 1194, 0, 85
 	Rearmable:

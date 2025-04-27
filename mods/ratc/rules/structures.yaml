@@ -1,119 +1,137 @@
 FACT:
-    Inherits: ^Building
-      Selectable:
-        Bounds: 3072, 3072
-    Building:
-        Footprint: xxX xxx XxX ===
-        Dimensions: 3,4
-        LocalCenterOffset: 0,-512,0
-    Buildable:
-        Queue: Building
-        BuildPaletteOrder: 1000
-        Prerequisites: ~disabled
-        Description: Produces structures.
-    ProvidesPrerequisite@allies:
-        Factions: allies, england, france, germany
-        Prerequisite: structures.allies
-    ProvidesPrerequisite@alliesvanilla:
-        Factions: allies
-        Prerequisite: structures.alliesvanilla
-    ProvidesPrerequisite@england:
-        Factions: england
-        Prerequisite: structures.england
-    ProvidesPrerequisite@france:
-        Factions: france
-        Prerequisite: structures.france
-    ProvidesPrerequisite@germany:
-        Factions: germany
-        Prerequisite: structures.germany
-    ProvidesPrerequisite@soviet:
-        Factions: soviet, russia, ukraine, japan, italy
-        Prerequisite: structures.soviet
-    ProvidesPrerequisite@sovietvanilla:
-        Factions: soviet
-        Prerequisite: structures.sovietvanilla
-    ProvidesPrerequisite@russia:
-        Factions: russia
-        Prerequisite: structures.russia
-    ProvidesPrerequisite@japan:
-        Factions: japan
-        Prerequisite: structures.japan
-    ProvidesPrerequisite@italy:
-        Factions: italy
-        Prerequisite: structures.italy
-    ProvidesPrerequisite@ukraine:
-        Factions: ukraine
-        Prerequisite: structures.ukraine
-    Health:
-        HP: 150000
-    Armor:
-        Type: Wood
-    RevealsShroud:
-        MinRange: 4c0
-        Range: 5c0
-        RevealGeneratedShroud: False
-    RevealsShroud@GAPGEN:
-        Range: 4c0
-    Production:
-        Produces: Building, Defense
-    Valued:
-        Cost: 2000
-    Tooltip:
-        Name: Construction Yard
-    SpawnActorsOnSell:
-        ActorTypes: e1,e1,e1,tecn,tecn2
-        GuaranteedActorTypes: e1, e6
-    BaseBuilding:
-    Transforms:
-        RequiresCondition: factundeploy
-        PauseOnCondition: chrono-vortex || being-captured || being-demolished || build-incomplete
-        IntoActor: mcv
-        Offset: 1,1
-        Facing: 384
-    TransformsIntoMobile:
-        RequiresCondition: factundeploy
-        Locomotor: heavywheeled
-        RequiresForceMove: true
-    TransformsIntoPassenger:
-        RequiresCondition: factundeploy
-        CargoType: Vehicle
-        RequiresForceMove: true
-    TransformsIntoRepairable:
-        RequiresCondition: factundeploy
-        RepairActors: fix
-        RequiresForceMove: true
-    TransformsIntoTransforms:
-        RequiresCondition: factundeploy && build-incomplete
-    Sellable:
-        RequiresCondition: !build-incomplete && !chrono-vortex && !being-captured && !being-demolished
-    GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
-        Condition: factundeploy
-        Prerequisites: global-factundeploy
-    ProductionBar@Building:
-        ProductionType: Building
-    ProductionBar@Defense:
-        ProductionType: Defense
-        Color: 8A8A8A
-    BaseProvider:
-        PauseOnCondition: being-captured
-        Range: 16c0
-    WithBuildingBib:
-    WithBuildingPlacedAnimation:
-        RequiresCondition: !build-incomplete && !chrono-vortex
-    Power:
-        Amount: 0
-    WithDeathAnimation:
-        DeathSequence: dead
-        UseDeathTypeSuffix: false
-    ProvidesPrerequisite@buildingname:
-    HitShape:
-        TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
-        Type: Rectangle
-            TopLeft: -1536, -1536
-            BottomRight: 1536, 1536
-    ConyardChronoReturn:
-        ReturnOriginalActorOnCondition: build-incomplete
-        Condition: chrono-vortex
-        Damage: 950
-    TransferTimedExternalConditionOnTransform:
-        Condition: invulnerability
+	Inherits: ^Building
+		Selectable:
+			Bounds: 3072, 3072
+	Building:
+		Footprint: xxX xxx XxX ===
+		Dimensions: 3,4
+		LocalCenterOffset: 0,-512,0
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 1000
+		Prerequisites: ~disabled
+		Description: Produces structures.
+	ProvidesPrerequisite@allies:
+		Factions: allies, england, france, germany
+		Prerequisite: structures.allies
+	ProvidesPrerequisite@alliesvanilla:
+		Factions: allies
+		Prerequisite: structures.alliesvanilla
+	ProvidesPrerequisite@england:
+		Factions: england
+		Prerequisite: structures.england
+	ProvidesPrerequisite@france:
+		Factions: france
+		Prerequisite: structures.france
+	ProvidesPrerequisite@germany:
+		Factions: germany
+		Prerequisite: structures.germany
+	ProvidesPrerequisite@soviet:
+		Factions: soviet, russia, ukraine, japan, italy
+		Prerequisite: structures.soviet
+	ProvidesPrerequisite@sovietvanilla:
+		Factions: soviet
+		Prerequisite: structures.sovietvanilla
+	ProvidesPrerequisite@russia:
+		Factions: russia
+		Prerequisite: structures.russia
+	ProvidesPrerequisite@japan:
+		Factions: japan
+		Prerequisite: structures.japan
+	ProvidesPrerequisite@italy:
+		Factions: italy
+		Prerequisite: structures.italy
+	ProvidesPrerequisite@ukraine:
+		Factions: ukraine
+		Prerequisite: structures.ukraine
+	Health:
+		HP: 150000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		MinRange: 4c0
+		Range: 5c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+	Production:
+		Produces: Building, Defense
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Construction Yard
+	SpawnActorsOnSell:
+		ActorTypes: e1,e1,e1,tecn,tecn2
+		GuaranteedActorTypes: e1, e6
+	BaseBuilding:
+	Transforms:
+		RequiresCondition: factundeploy
+		PauseOnCondition: chrono-vortex || being-captured || being-demolished || build-incomplete
+		IntoActor: mcv
+		Offset: 1,1
+		Facing: 384
+	TransformsIntoMobile:
+		RequiresCondition: factundeploy
+		Locomotor: heavywheeled
+		RequiresForceMove: true
+	TransformsIntoPassenger:
+		RequiresCondition: factundeploy
+		CargoType: Vehicle
+		RequiresForceMove: true
+	TransformsIntoRepairable:
+		RequiresCondition: factundeploy
+		RepairActors: fix
+		RequiresForceMove: true
+	TransformsIntoTransforms:
+		RequiresCondition: factundeploy && build-incomplete
+	Sellable:
+		RequiresCondition: !build-incomplete && !chrono-vortex && !being-captured && !being-demolished
+	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
+		Condition: factundeploy
+		Prerequisites: global-factundeploy
+	ProductionBar@Building:
+		ProductionType: Building
+	ProductionBar@Defense:
+		ProductionType: Defense
+		Color: 8A8A8A
+	BaseProvider:
+		PauseOnCondition: being-captured
+		Range: 16c0
+	WithBuildingBib:
+	WithBuildingPlacedAnimation:
+		RequiresCondition: !build-incomplete && !chrono-vortex
+	Power:
+		Amount: 0
+	WithDeathAnimation:
+		DeathSequence: dead
+		UseDeathTypeSuffix: false
+	ProvidesPrerequisite@buildingname:
+	HitShape:
+		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
+	ConyardChronoReturn:
+		ReturnOriginalActorOnCondition: build-incomplete
+		Condition: chrono-vortex
+		Damage: 950
+	TransferTimedExternalConditionOnTransform:
+		Condition: invulnerability
+
+#^BaseAAGun:
+#	Inherits: AGUN
+
+gatlingaagun:
+	Inherits: AGUN
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 90
+		Prerequisites: ~techlevel.medium
+		Description: Gatling Gun Anti-Aircraft Defense - Designed by Dr. Archer Evans
+	Armament:
+		Name: Gatling Gun
+		Weapon: ChainGun.Yak
+		LocalOffset: 520,100,450
+		MuzzleSequence: muzzle
+
+

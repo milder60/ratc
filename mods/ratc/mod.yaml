@@ -38,6 +38,7 @@ Packages:
     common|scripts
     ra|uibits
     $ratc:ratc
+    ratc|bits
 
 
 MapFolders:
@@ -66,6 +67,7 @@ Rules:
     ratc|rules/player.yaml
     ratc|rules/vehicles.yaml
     ratc|rules/aircraft.yaml
+    ratc|rules/infantry.yaml
 
 
 
@@ -79,6 +81,8 @@ Sequences:
     ra|sequences/decorations.yaml
     ratc|sequences/vehicles.yaml
     ratc|sequences/aircraft.yaml
+    ratc|sequences/infantry.yaml
+    ratc|sequences/structures.yaml
 
 TileSets:
     ra|tilesets/snow.yaml
