@@ -1,0 +1,43 @@
+n5:
+	Inherits: ^Soldier
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 70
+		Prerequisites: ~barr, ~techlevel.low
+		Description: Chemical Trooper created by the famous Dr. Archer Evans
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Chemical Trooper
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Health:
+		HP: 4000
+	Armament@PRIMARY:
+		Weapon: ChemsprayTD
+		LocalOffset: 341,0,254
+		MuzzleSequence: muzzle
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: ChemsprayTD
+	TakeCover:
+		ProneOffset: 160,0,-288
+	Explodes:
+		Weapon: VisualExplode
+		EmptyWeapon: VisualExplode
+		Chance: 50
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+		RequiresCondition: !parachute
+	WithInfantryBody@PARACHUTE:
+		StandSequences: parachute
+		RequiresCondition: parachute
+		Palette: player-noshadow
+		IsPlayerPalette: true
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: barracks.upgraded

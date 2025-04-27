@@ -1,0 +1,156 @@
+n5:
+	stand:
+		Filename: n5.shp
+		Facings: 8
+	stand2:
+		Filename: n5.shp
+		Start: 8
+		Facings: 8
+	run:
+		Filename: n5.shp
+		Start: 16
+		Length: 6
+		Facings: 8
+		Tick: 100
+	shoot:
+		Filename: n5.shp
+		Start: 64
+		Length: 16
+		Facings: 8
+	liedown:
+		Filename: n5.shp
+		Start: 192
+		Length: 2
+		Facings: 8
+	standup:
+		Filename: n5.shp
+		Start: 240
+		Length: 2
+		Facings: 8
+	prone-stand:
+		Filename: n5.shp
+		Start: 208
+		Stride: 4
+		Facings: 8
+	prone-stand2:
+		Filename: n5.shp
+		Start: 208
+		Stride: 4
+		Facings: 8
+	prone-run:
+		Filename: n5.shp
+		Start: 208
+		Length: 4
+		Facings: 8
+		Tick: 100
+	prone-shoot:
+		Filename: n5.shp
+		Start: 256
+		Length: 16
+		Facings: 8
+	parachute:
+		Filename: n5.shp
+		Start: 599
+	idle1:
+		Filename: n5.shp
+		Start: 384
+		Length: 16
+		Tick: 120
+	idle2:
+		Filename: n5.shp
+		Start: 400
+		Length: 16
+		Tick: 120
+	cheer:
+		Filename: n5.shp
+		Start: 588
+		Length: 3
+		Facings: 8
+		Tick: 120
+	die1:
+		Filename: n5.shp
+		Start: 509
+		Length: 9
+		Tick: 80
+	die2:
+		Filename: n5.shp
+		Start: 518
+		Length: 8
+		Tick: 80
+	die3:
+		Filename: n5.shp
+		Start: 526
+		Length: 8
+		Tick: 80
+	die4:
+		Filename: n5.shp
+		Start: 534
+		Length: 12
+		Tick: 80
+	die5:
+		Filename: n5.shp
+		Start: 546
+		Length: 18
+		Tick: 80
+	die7:
+		Filename: n5.shp
+		Start: 494
+		Length: 10
+		Tick: 80
+	die-crushed:
+		Filename: corpse1.tem
+		TilesetFilenames:
+			SNOW: corpse1.sno
+		Length: 6
+		Tick: 1600
+		ZOffset: -511
+	muzzle:
+		Combine:
+			0:
+				Filename: chem-n.shp
+				Length: *
+				Offset: 1,2
+			1:
+				Filename: chem-nw.shp
+				Length: *
+				Offset: 8,2
+			2:
+				Filename: chem-w.shp
+				Length: *
+				Offset: 8,-3
+			3:
+				Filename: chem-sw.shp
+				Length: *
+				Offset: 7,-6
+			4:
+				Filename: chem-s.shp
+				Length: *
+				Offset: 1,-6
+			5:
+				Filename: chem-se.shp
+				Length: *
+				Offset: -5,-6
+			6:
+				Filename: chem-e.shp
+				Length: *
+				Offset: -7,-3
+			7:
+				Filename: chem-ne.shp
+				Length: *
+				Offset: -3,2
+		Facings: 8
+		Length: 13
+		InterpolatedFacings: 16
+	icon:
+		Filename: n5icnh.shp
+
+
+chemall:
+	idle:
+		Filename: chemall.shp
+		Length: 19
+		Facings: -8
+		Tick: 140
+		ZOffset: 1023
+		Offset: 0, 0, 6
+		InterpolatedFacings: 32

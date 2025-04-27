@@ -68,6 +68,7 @@ Rules:
     ratc|rules/vehicles.yaml
     ratc|rules/aircraft.yaml
     ratc|rules/infantry.yaml
+    ratc|rules/units/n5.yaml
 
 
 
@@ -83,6 +84,8 @@ Sequences:
     ratc|sequences/aircraft.yaml
     ratc|sequences/infantry.yaml
     ratc|sequences/structures.yaml
+    ratc|sequences/units/n5.yaml
+
 
 TileSets:
     ra|tilesets/snow.yaml

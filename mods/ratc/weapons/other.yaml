@@ -42,3 +42,48 @@ Atomic120mm:
 		Versus:
 			Heavy: 115
 		InvalidTargets: Air
+
+
+ChemsprayTD:
+	Inherits: ^FlamerTD
+	Warhead@1Dam: SpreadDamage
+		Falloff: 100, 45, 20, 0
+		Damage: 2000
+		Versus:
+			Concrete: 40
+			Heavy: 40
+		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Scorch-NoFlame
+
+
+
+^FlamerTD:
+	ReloadDelay: 65
+	Range: 2c512
+	MinRange: 0c512
+	Report: flamer2.aud
+	TargetActorCenter: true
+	Projectile: Bullet
+		Speed: 250
+		Image: chemall
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Falloff: 100, 35, 10, 0
+		Damage: 1850
+		Versus:
+			None: 300
+			Wood: 100
+			Tree: 100
+			Light: 70
+			Heavy: 30
+			Concrete: 30
+			Brick: 5
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+		ValidRelationships: Enemy, Neutral
+		Delay: 5
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Scorch
+		InvalidTargets: Vehicle, Building, Wall
+
+

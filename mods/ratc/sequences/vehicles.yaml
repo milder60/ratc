@@ -1,5 +1,7 @@
 jflametank:
 	Inherits: 3tnk
+	icon:
+		Filename: flametank_icon.shp
 
 jarchertank:
 	Inherits: 4tnk

@@ -6,7 +6,7 @@ japheli:
 
 japyak:
 	idle:
-		Filename: a10.shp
+		Filename: gatlinga10.shp
 		Facings: 32
 		UseClassicFacings: True
 	muzzle:
@@ -15,4 +15,4 @@ japyak:
 		Length: 2
 		Facings: 16
 	icon:
-		Filename: gatlingicon.shp
+		Filename: gatlinga10_icon.shp
