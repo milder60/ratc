@@ -2,7 +2,7 @@ gatlingaagun:
 	Inherits: agun
 		Defaults:
 		Filename: cram.shp
-	idle: # Empty first frame (agunmake has no empty frames). We need WithSpriteBody for the make anim, and WSB needs at least a placeholder default sequence to work
+	idle:
 		Filename: crammake.shp
 	make:
 		Filename: crammake.shp
