@@ -6,4 +6,7 @@ jflametank:
 jarchertank:
 	Inherits: 4tnk
 
+scouttank:
+	Inherits: 1tnk
+
 

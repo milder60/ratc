@@ -17,6 +17,52 @@ jflametank:
 		LocalOffset: 256,0,512
 
 
+scouttank:
+	Inherits: 1TNK
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 120
+		Prerequisites:  ~techlevel.low, ~vehicles.soviet
+		Description: Fast tank, good for scouting.\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft \n created by the famous DR. Evans
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: scout Tank
+		GenericName: Tank
+	UpdatesPlayerStatistics:
+		AddToArmyValue: true
+	Health:
+		HP: 26560
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 145
+	RevealsShroud:
+		MinRange: 4c0
+		Range: 5c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+	Turreted:
+		TurnSpeed: 36
+	Armament:
+		Weapon: 25mm
+		Recoil: 90
+		RecoilRecovery: 25
+		LocalOffset: 768,0,90
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded
+	WithProductionIconOverlay:
+		Types: Veterancy
+		Prerequisites: vehicles.upgraded
+
+
 ^BaseMammothTank:
 	Inherits: 4TNK
 
