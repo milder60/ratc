@@ -40,3 +40,38 @@ gatlingaagun:
 		Length: *
 	icon:
 		Filename: gatlingaa_icon.shp
+
+
+newairfield:
+	Defaults:
+		Filename: ngairc.shp
+	idle:
+		Filename: ngairc.shp
+		Length: 8
+		Tick: 160
+		ZOffset: -1023
+		Offset: 0,-4
+	damaged-idle:
+		Filename: ngairc.shp
+		Start: 8
+		Length: 8
+		Tick: 160
+		ZOffset: -1023
+		Offset: 0,-4
+	active:
+		Length: 8
+		Tick: 160
+		ZOffset: -1023
+		Offset: 0,-4
+	damaged-active:
+		Start: 8
+		Length: 8
+		Tick: 160
+		ZOffset: -1023
+		Offset: 0,-4
+	make:
+		Filename: ngaircmk.shp
+		Length: *
+		Offset: 0,-4
+	icon:
+		Filename: afldicon.shp
