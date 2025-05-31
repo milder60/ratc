@@ -134,12 +134,12 @@ gatlingaagun:
 		LocalOffset: 520,100,450
 		MuzzleSequence: muzzle
 
-newairfield:
-	Inherits: AFLD
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 130
-		Prerequisites: dome, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine
-		Description: New Airfield - Designed by Dr. Archer Evans
+#newairfield:
+#	Inherits: AFLD
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 130
+#		Prerequisites: dome, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine
+#		Description: New Airfield - Designed by Dr. Archer Evans
 
 
