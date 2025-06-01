@@ -130,7 +130,7 @@ gatlingaagun:
 		Prerequisites: ~techlevel.medium, dome, ~structures.soviet
 		Description: Gatling Gun Anti-Aircraft Defense - Designed by Dr. Archer Evans
 	Armament:
-		Weapon: ChainGun.Yak
+		Weapon: AAChainGun
 		LocalOffset: 520,100,450
 		MuzzleSequence: muzzle
 

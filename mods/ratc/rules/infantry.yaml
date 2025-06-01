@@ -10,7 +10,7 @@ japadog:
 		Prerequisites: ~kenn, ~techlevel.infonly
 		Description: Genetically Engineered Flame-Dog created by the famous Dr. Archer Evans
 	Valued:
-		Cost: 300
+		Cost: 350
 	Tooltip:
 		Name: Genentically Engineered Flame-Dog
 		GenericName: Dog
@@ -20,9 +20,9 @@ japadog:
 		Bounds: 512, 725, -42, -170
 		DecorationBounds: 512, 725, -42, -170
 	Health:
-		HP: 1800
+		HP: 2200
 	Mobile:
-		Speed: 100
+		Speed: 110
 		Voice: Move
 		PauseOnCondition: attack-cooldown || eating
 	Guard:

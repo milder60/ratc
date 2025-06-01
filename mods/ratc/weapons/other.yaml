@@ -87,3 +87,13 @@ ChemsprayTD:
 		InvalidTargets: Vehicle, Building, Wall
 
 
+
+AAChainGun:
+	Inherits: ChainGun.Yak
+	ValidTargets: Air, AirborneActor
+	Range: 8c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 1200
+
+
+
