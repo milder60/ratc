@@ -45,16 +45,10 @@ Atomic120mm:
 
 
 ChemsprayTD:
-	Inherits: ^FlamerTD
-	Warhead@1Dam: SpreadDamage
-		Falloff: 100, 45, 20, 0
-		Damage: 2000
-		Versus:
-			Concrete: 40
-			Heavy: 40
-		DamageTypes: Prone50Percent, TriggerProne, RadiationDeath
-	Warhead@2Smu: LeaveSmudge
-		SmudgeType: Scorch-NoFlame
+	Inherits: ^FireWeapon
+	Projectile: Bullet
+		Speed: 250
+		Image: chemall
 
 
 
@@ -88,12 +82,12 @@ ChemsprayTD:
 
 
 
-AAChainGun:
-	Inherits: ChainGun.Yak
-	ValidTargets: Air, AirborneActor
-	Range: 8c0
-	Warhead@1Dam: SpreadDamage
-		Damage: 1200
+#AAChainGun:
+#	Inherits: ChainGun
+#	ValidTargets: Air, AirborneActor
+#	Range: 8c0
+#	Warhead@1Dam: SpreadDamage
+#		Damage: 1200
 
 
 

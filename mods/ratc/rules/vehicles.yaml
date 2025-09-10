@@ -6,7 +6,7 @@ jflametank:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Japanese Flame Tank
+		Name: Japanese Flame Tank created by the famous Dr. Archer Evans
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
@@ -76,7 +76,7 @@ jarchertank:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Atomic Archer Tank
+		Name: Atomic Archer Tank created by the famous Dr. Archer Evans
 		GenericName: Tank
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
